@@ -26,7 +26,7 @@ namespace DevStore.ShoppingCart.API.Data
 
             modelBuilder.Entity<CustomerShoppingCart>()
                 .HasIndex(c => c.CustomerId)
-                .HasName("IDX_Customer");
+                .HasDatabaseName("IDX_Customer");
 
             modelBuilder.Entity<CustomerShoppingCart>()
                 .Ignore(c => c.Voucher)
